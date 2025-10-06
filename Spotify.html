@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player : Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="spotify"><img src="spotify.svg" alt="Spotify"></div>
+            <div class="home"><img src="home.svg" alt="Home"></div>
+            <div class="search">
+                <img class="img1" src="search.svg">
+                <input type="text" placeholder="What do you want to play?">
+                <img class="img2" src="floder.svg">
+            </div>
+            <div class="information1">
+                <ul>
+                    <li>Premium</li>
+                    <li>Support</li>
+                    <li>Download</li>
+                </ul>
+            </div>
+            <div class="i">|</div>
+            <div class="information2">
+                <ul>
+                    <li>Install App</li>
+                    <li>Sign Up</li>
+                </ul>
+            </div>
+            <button>Log in</button>
+        </div>
+        <div class="centre">
+            <div class="left">
+                <h2 class="player-heading">Now Playing</h2>
+                <img id="now-playing-cover" src="cover.jpg" alt="Album Art">
+
+                <div class="now-playing-details">
+                    <strong id="now-playing-title">Select a Song</strong>
+                    <span id="now-playing-artist"></span>
+                </div>
+
+                <div class="seek-bar-container">
+                    <span id="current-time">0:00</span>
+                    <input type="range" id="seek-bar" value="0" min="0" max="100">
+                    <span id="total-duration">0:00</span>
+                </div>
+
+                <div class="control-buttons">
+                    <img src="previous.svg" alt="Previous" class="control-icon" id="prev-btn">
+                    <img src="play.svg" alt="Play" class="control-icon play-pause" id="play-pause-btn">
+                    <img src="next.svg" alt="Next" class="control-icon" id="next-btn">
+                </div>
+                <div class="left-3">
+                    <ul>
+                        <li>Legal</li>
+                        <li>Safety & Privacy Centre</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookies</li>
+                    </ul>
+                    <ul>
+                        <li>About Ads</li>
+                        <li>Accessibility</li>
+                    </ul>
+                    <strong><u>Cookies</u></strong>
+                    <button><img src="globe.svg">English</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="trending">
+                    <h2>Trending songs</h2>
+                    <div class="card-container" id="trending-cards">
+                    </div>
+                </div>
+                <div class="nine-tea">
+                    <h2>90's songs</h2>
+                    <div class="card-container" id="ninet-cards">
+                        <div class="card">
+                            <div class="play-btn">
+                                <div class="triangle"></div>
+                            </div>
+                            <img src="90s.jpg">
+                            <strong>Ye Shaam Mastani</strong>
+                            <span>Rajesh Khanna/Asha Parekh</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about">
+                    <div class="li-b">Company</div>
+                    <div class="li-b">Communities</div>
+                    <div class="li-b">Useful links</div>
+                    <div class="li-b">Spotify Plans</div>
+                    <div class="image-icon">
+                        <img src="insta.svg" alt="Instagram">
+                        <img src="twitter.svg" alt="Twitter">
+                        <img src="facebook.svg" alt="Facebook">
+                    </div>
+                    <div class="li">About</div>
+                    <div class="li">For Artists</div>
+                    <div class="li">Support</div>
+                    <div class="li">Premium Individual</div>
+                    <div class="li">Jobs</div>
+                    <div class="li">Developers</div>
+                    <div class="li">Free Mobile App</div>
+                    <div class="li">Premium Duo</div>
+                    <div class="li">For the Record</div>
+                    <div class="li">Advertising</div>
+                    <div class="li">Popular by Country</div>
+                    <div class="li">Premium Family</div>
+                    <div class="li">Investors</div>
+                    <div class="li">Import your music</div>
+                    <div class="li">Premium Student</div>
+                    <div class="li">Vendors</div>
+                    <div class="li">Spotify Free</div>
+                </div>
+                <div class="copyright">© 2025 Spotify -by Shlok</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-text">
+                <strong>Preview of Spotify</strong>
+                <span>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</span>
+            </div>
+            <button>Sign up free</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
